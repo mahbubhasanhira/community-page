@@ -1,0 +1,148 @@
+.comments {
+  margin-left: 20px;
+
+  .comment {
+    .commentContent {
+      background: #f1f3f5;
+      padding: 10px 0;
+      margin-bottom: 10px;
+      border-radius: 5px;
+
+      .commentText {
+        margin: 0 0 10px;
+        padding-left: 10px;
+
+        h4 {
+          font-size: 0.9rem;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          margin: 0;
+          padding: 0;
+
+          svg {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+
+        p {
+          margin: 0;
+          padding: 10px;
+        }
+      }
+
+      .commentActions {
+        display: flex;
+        margin-left: 20px;
+
+        button {
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          padding: 5px 10px;
+          margin-right: 10px;
+          font-size: 14px;
+          &.delete {
+            background-color: #d10808;
+            &:hover {
+              background-color: #e21212;
+            }
+          }
+
+          &.edit {
+            background-color: #f0a500;
+            &:hover {
+              background-color: #f0b500;
+            }
+          }
+
+          &.reply,
+          &.update {
+            background-color: #15ad36;
+            &:hover {
+              background-color: #20be45;
+            }
+          }
+        }
+      }
+    }
+
+    .replyComment {
+      display: flex;
+      align-items: center;
+      margin: 10px;
+
+      input {
+        flex: 1;
+        margin-right: 10px;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input:focus {
+        outline: none;
+        border: 1px solid gray;
+      }
+
+      button {
+        padding: 8px 12px;
+        font-size: 14px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        color: #fff;
+        background-color: #15ad36;
+
+        &:hover {
+          background-color: #20be45;
+        }
+      }
+
+      .cancelButton {
+        margin-left: 10px;
+        background-color: rgb(209, 8, 8);
+
+        &:hover {
+          background-color: rgb(224, 18, 18);
+        }
+      }
+    }
+  }
+
+  .newComment {
+    display: flex;
+    align-items: center;
+
+    input {
+      flex: 1;
+      margin-right: 10px;
+      padding: 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input:focus {
+      outline: none;
+      border: 1px solid gray;
+    }
+
+    button {
+      padding: 8px 12px;
+      font-size: 14px;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: #15ad36;
+
+      &:hover {
+        background-color: #20be45;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.post {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.36);
+  margin: 30px 0;
+
+  .postWrapper {
+    padding: 10px;
+
+    .postTop {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .postTopLeft {
+        display: flex;
+        align-items: center;
+
+        svg {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .profileName {
+          margin-left: 10px;
+          font-weight: 600;
+          font-size: 16px;
+        }
+      }
+
+      .postTopRight {
+        button {
+          border: none;
+          padding: 7px 15px;
+          border-radius: 5px;
+          font-weight: 500;
+          cursor: pointer;
+          color: #fff;
+          background-color: rgb(209, 8, 8);
+          &:hover {
+            background-color: rgb(224, 18, 18);
+          }
+
+          &.edit {
+            margin-right: 10px;
+            background-color: #f0a500;
+            &:hover {
+              background-color: #f0b500;
+            }
+          }
+        }
+      }
+    }
+
+    .postCenter {
+      margin: 20px 0;
+
+      p {
+        font-family: "Arial", sans-serif;
+        font-size: 1rem;
+      }
+    }
+
+    .count {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+  }
+}
