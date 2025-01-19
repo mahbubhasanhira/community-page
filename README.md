@@ -141,4 +141,4 @@ Modify the styles in `styles` folder to customize the appearance of the applicat
 
 ### Initial Data
 
-The initial posts and comments are defined in the `mockPosts.ts` under the `utilities` folder array within `CommunityPage.tsx`. You can modify this data to suit your requirements.
+The initial posts and comments are defined in the `mockPosts.ts` under the `utilities` folder. You can modify this data to suit your requirements.
